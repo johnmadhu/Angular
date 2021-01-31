@@ -1,0 +1,78 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "name": "admin1",
+      "mail": "admin123@domain.com",
+      "phone": "1234567890",
+      "role": "admin",
+      "district": "warangal"
+    },
+    {
+      "name": "madhukar",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "admin",
+      "district": "warangal",
+      "id": 2
+    },
+    {
+      "name": "madhukar",
+      "mail": "madhukar@gmail.com",
+      "phone": "987654321",
+      "role": "admin",
+      "district": "warangal",
+      "id": 3
+    },
+    {
+      "name": "madhukar",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "admin",
+      "district": "warangal",
+      "id": 4
+    },
+    {
+      "name": "mad",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "teacher",
+      "district": "warangal",
+      "id": 5
+    },
+    {
+      "name": "mad",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "teacher",
+      "district": "warangal",
+      "id": 6
+    },
+    {
+      "name": "mad",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "teacher",
+      "district": "warangal",
+      "id": 7
+    },
+    {
+      "name": "madhukar",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "admin",
+      "district": "warangal",
+      "id": 9
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "name": "admin1",
+      "mail": "admin123@domain.com",
+      "phone": "1234567890",
+      "role": "admin",
+      "district": "warangal"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../assets/images/download.png" class="h-24"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a routerLink="../home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="../signup" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li> -->
+        </ul>
+    </div>
+</nav>
+<div class="page-wrapper">
+    <router-outlet></router-outlet>
+</div>
+<footer class="p-3">
+    <div class="container d-flex justify-content-between">
+        <div class="f-left">Copyright 2021 © All rights reserved.</div>
+        <div class="f-right">
+            <ul class="ul">
+                <li><i class="fab fa-facebook-square fs-20"></i></li>
+                <li><i class="fab fa-linkedin fs-20"></i></li>
+                <li><i class="fab fa-google-plus-square fs-20"></i></li>
+            </ul>
+        </div>
+    </div>
+    
+</footer>

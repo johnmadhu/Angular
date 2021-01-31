@@ -1,0 +1,49 @@
+<div class="reg-section">
+    <mat-card class="example-card p-0">
+        <mat-card-header class="mat-card-header d-block text-center">
+            <mat-card-title>SignUp</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form p-3 d-flex flex-column" [formGroup]='regForm' (submit)="addUser()">
+                <mat-form-field class="example-full-width mt-2">
+                    <mat-label>Fullname</mat-label>
+                    <input type="text" matInput aria-describedby="nameHelp" placeholder="Fullname" formControlName='name'>
+                </mat-form-field>
+                <!-- <span *ngIf="regForm.get('name').touched && regForm.get('name').hasError('required')" class="err-msg">Name is required !</span> -->
+                <mat-form-field class="example-full-width mt-2">
+                    <mat-label>Mail ID</mat-label>
+                    <input type="mail" matInput  aria-describedby="nameHelp" placeholder="Mail ID" formControlName='mail'>
+                </mat-form-field>
+                <!-- <span *ngIf="regForm.get('mail').touched && regForm.get('mail').hasError('required')" class="err-msg">Email ID is required !</span> -->
+                <span *ngIf="regForm.get('mail').touched && regForm.get('mail').hasError('email')" class="err-msg">Enter valid mail ID</span>
+                <mat-form-field class="example-full-width mt-2">
+                    <mat-label>Phone number</mat-label>
+                    <input type="number" matInput aria-describedby="nameHelp" placeholder="Phone number" formControlName='phone'>
+                </mat-form-field>
+                <!-- <span *ngIf="regForm.get('phone').touched && regForm.get('phone').hasError('required')" class="err-msg">Phone number is required !</span> -->
+                <mat-form-field appearance="fill" class="example-full-width mt-2">
+                    <mat-label>Role Type</mat-label>
+                    <mat-select formControlName="role">
+                      <mat-option value="admin">Admin Role</mat-option>
+                      <mat-option value="teacher">teacher</mat-option>
+                      <mat-option value="student">student</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                <mat-form-field class="example-full-width mt-2">
+                    <mat-label>District</mat-label>
+                    <input type="text" matInput placeholder="District" aria-describedby="nameHelp" formControlName='district'>
+                </mat-form-field>
+                <mat-card-actions class="m-3 text-center">
+                    <button mat-raised-button type="submit" [disabled]="!regForm.valid" color="primary" class="w-100">Register</button>
+                    <div class="form-group mb-0 mt-4">
+                        <div class="col-sm-12 justify-content-center d-flex">
+                            <p>Already have an account? <a routerLink="../login" class="text-info font-weight-normal ml-1">Sign In</a></p>
+                        </div>
+                    </div>
+                </mat-card-actions>
+            </form>
+        </mat-card-content>
+        <!-- <button mat-raised-button color="primary" class="w-100" (click)= "postData()">Register</button> -->
+       
+    </mat-card>
+</div>

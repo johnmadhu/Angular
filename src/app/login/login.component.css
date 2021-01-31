@@ -1,0 +1,20 @@
+.login-section{
+    /* width: 35%;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto; */
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-section mat-card{
+    width:30%;
+    height: auto;
+}
+.mat-form-field{display: block;}
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+    background-color: red;
+}
+input{outline: none !important;}.form-control:focus{border-color:none;box-shadow: none;}
+/* .mat-form-field-label{top:2.28125em !important} */
