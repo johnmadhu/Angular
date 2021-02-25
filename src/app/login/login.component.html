@@ -4,26 +4,23 @@
             <mat-card-title>Login</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <form class="example-form p-3" [formGroup]='loginForm'>
+            <form class="example-form p-3" [formGroup]='loginForm' (submit)="login()">
                 <mat-form-field class="example-full-width">
                   <mat-label>Username</mat-label>
                   <!-- <input type="text" matInput placeholder="Username"> -->
-                  <input type="text" matInput id="username" aria-describedby="nameHelp" placeholder="Username" formControlName='username'>
+                  <input type="text" matInput placeholder="Username" formControlName='username'>
                 </mat-form-field>
                 <mat-form-field class="example-full-width mt-3">
                     <mat-label>Password</mat-label>
-                    <input type="password" matInput placeholder="password" id="password" aria-describedby="nameHelp" formControlName='password'>
+                    <input type="password" matInput placeholder="password" formControlName='password'>
                 </mat-form-field>
-                
+                <button mat-raised-button color="primary" [disabled]='!loginForm.valid' class="w-100">Login</button>
             </form>
-        </mat-card-content>
-        <mat-card-actions class="m-3 text-center">
-            <button mat-raised-button color="primary" [disabled]='!loginForm.valid' class="w-100">Login</button>
-            <div class="form-group mb-0 mt-4">
+            <div class="form-group mb-4">
                 <div class="col-sm-12 justify-content-center d-flex">
                     <p>Don't have an account? <a routerLink="../signup" class="text-info font-weight-normal ml-1">Sign Up</a></p>
                 </div>
             </div>
-        </mat-card-actions>
+        </mat-card-content>
     </mat-card>
 </div>

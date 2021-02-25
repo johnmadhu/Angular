@@ -1,0 +1,33 @@
+.actions i{cursor: pointer;
+    font-size: 13px;
+    padding: 7px 10px;
+    border-radius: 25%;
+    border: 1px solid #ddd;
+    margin-left: 8px;}
+    .actions i:hover{
+        /* background: #effafb; */
+        box-shadow: inset 0px 0px 17px 0px rgb(0 0 0 / 26%), inset 0 0px 0px rgb(0 0 0 / 7%);
+    }
+    .table-striped tbody tr:nth-of-type(odd){background-color: #fff;}
+    .table th, .table td{padding:7px 0px}
+
+    li span:first-child{
+        display: inline;
+        background: red;
+        padding: 4px 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        margin-right: 6px;
+        color: #fff;
+    }
+    .my-list{list-style-type: none;}
+    .my-list li{
+        background: #ddd;
+    width: 12%;
+    border-radius: 5px;
+    padding: 3px 20px 3px 0px;
+    margin-bottom:10px;
+    }
+    .my-list li.selected{background: #2facf5;
+        color: #fff;}
+        .my-list li.selected span:first-child{background-color: aqua;color:azure}

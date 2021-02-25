@@ -1,4 +1,3 @@
-<h2>{{errMsg}}</h2>
 <table class="table table-striped table-bordered text-center">
     <thead class="">
       <tr>
@@ -12,12 +11,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let data of getList;let i = index">
-        <td>{{data.id}}</td>
-        <td>{{data.name}}</td>
-        <td>{{data.mail}}</td>
+      <tr *ngFor="let item of list; let i= index">
+        <td>{{item.name}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.mail}}</td>
         <td>{{data.phone}}</td>
-        <td>{{data.district}}</td>
+        <td>{{data.phone}}</td>
         <td>{{data.role}}</td>
         <td class="actions text-center">
             <i class="fas fa-trash" (click)="delete(i)"></i>&nbsp;<i class="fas fa-pen" (click)="edit(i)"></i>&nbsp;<i class="fas fa-eye" (click)="view(i)"></i>
@@ -26,11 +25,4 @@
     </tbody>
   </table>
 
-  <h3 appChangeColor>For route params</h3>
-  <ul class="my-list">
-    <li *ngFor="let i of list" [class.selected]="isSelected(i)"(click)="getId(i)">
-        <span>{{i.id}}</span> <span>{{i.name}}</span>
-    </li>
-
-    
-  </ul>
+  {{fromParent}}

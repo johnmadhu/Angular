@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonService} from './common.service';
 
 @Component({
@@ -8,7 +9,10 @@ import { CommonService} from './common.service';
 })
 export class AppComponent {
   title = 'myProject';
-  constructor(private CommonService:CommonService){
-
+  get:any;
+  studlist = [];
+  public teachlist:string = 'this is from parent';
+  constructor(){
   }
+  
 }

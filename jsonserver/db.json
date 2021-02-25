@@ -1,15 +1,17 @@
 {
   "admin": [
     {
-      "id": 1,
-      "name": "admin1",
+      "name": "admin1222",
+      "password": "Madhu@123",
       "mail": "admin123@domain.com",
       "phone": "1234567890",
       "role": "admin",
-      "district": "warangal"
+      "district": "warangal",
+       "id": 1
     },
     {
       "name": "madhukar",
+      "password": "Madhu@124",
       "mail": "madhukar@gmail.com",
       "phone": 1234567890,
       "role": "admin",
@@ -18,6 +20,7 @@
     },
     {
       "name": "madhukar",
+      "password": "Madhu@125",
       "mail": "madhukar@gmail.com",
       "phone": "987654321",
       "role": "admin",
@@ -26,6 +29,7 @@
     },
     {
       "name": "madhukar",
+      "password": "Madhu@126",
       "mail": "madhukar@gmail.com",
       "phone": 1234567890,
       "role": "admin",
@@ -34,6 +38,7 @@
     },
     {
       "name": "mad",
+      "password": "Madhu@127",
       "mail": "madhukar@gmail.com",
       "phone": 1234567890,
       "role": "teacher",
@@ -42,6 +47,7 @@
     },
     {
       "name": "mad",
+      "password": "Madhu@128",
       "mail": "madhukar@gmail.com",
       "phone": 1234567890,
       "role": "teacher",
@@ -50,6 +56,7 @@
     },
     {
       "name": "mad",
+      "password": "Madhu@223",
       "mail": "madhukar@gmail.com",
       "phone": 1234567890,
       "role": "teacher",
@@ -58,16 +65,63 @@
     },
     {
       "name": "madhukar",
+      "password": "Madhu@323",
       "mail": "madhukar@gmail.com",
       "phone": 1234567890,
       "role": "admin",
       "district": "warangal",
       "id": 9
+    },
+    {
+      "name": "harish",
+      "password": "Madhu@423",
+      "mail": "harish@gmail.com",
+      "phone": 1234567890,
+      "role": "student",
+      "district": "warangal",
+      "id": 10
+    },
+    {
+      "name": "madd",
+      "password": "Madhu@523",
+      "mail": "madd@gmail.com",
+      "phone": 1234567890,
+      "role": "admin",
+      "district": "warangal",
+      "id": 11
+    },
+    {
+      "name": "madd",
+      "password": "Madhu@623",
+      "mail": "madd@gmail.com",
+      "phone": 1234567890,
+      "role": "admin",
+      "district": "warangal",
+      "id": 12
+    },
+    {
+      "name": "asda",
+      "password": "Madhu@723",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "admin",
+      "district": "werfghjkl",
+      "id": 13
+    },
+    {
+      "name": "madhukar",
+      "password": "Madhu@792",
+      "mail": "madhukar@gmail.com",
+      "phone": 1234567890,
+      "role": "teacher",
+      "district": "warangal",
+      "id": 14
     }
   ],
   "student": [
     {
-      "id": 1,
+      "id": 20,
+      "password": "Madu@723",
       "name": "admin1",
       "mail": "admin123@domain.com",
       "phone": "1234567890",

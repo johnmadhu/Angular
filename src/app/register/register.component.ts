@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder, Validators } from '@angular/forms';
+import { FormGroup,FormBuilder, Validators, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CommonService } from '../common.service';
 
 @Component({
@@ -9,20 +10,25 @@ import { CommonService } from '../common.service';
 })
 export class RegisterComponent implements OnInit {
   regForm:FormGroup;
-  constructor(private formBuilder:FormBuilder, private apiService:CommonService) { 
+  constructor(private formBuilder:FormBuilder, private apiService:CommonService, private router:Router) { 
     this.regForm = formBuilder.group({
       name:['',Validators.required],
-      mail:['', [Validators.required,
+      password:['',Validators.required],
+      mail:['',[Validators.required,
                   Validators.email]],
       phone:['',Validators.required],
       role:['', Validators.required],
-      district:['',Validators.required]
+      district:['',Validators.required],
+      nestForm : formBuilder.group({
+        country: ['', Validators.required]
+      })
+     
     })
+    
   }
   addUser(){
-    console.log(this.regForm)
       this.apiService.register(this.regForm.value).subscribe(response =>{
-        // this.router.navigate(['../login']);
+         this.router.navigate(['../login']);
       },
       error=>{
         console.log('registration not done!')
